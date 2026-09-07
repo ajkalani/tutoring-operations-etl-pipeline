@@ -153,11 +153,6 @@ if __name__ == "__main__":
     INPUT_FILE = BASE_DIR / "data" / "raw" / "mock_tutoring_hours.xlsx"
     OUTPUT_FOLDER = BASE_DIR / "data" / "processed"
 
-    # local paths if outside repository
-    if not INPUT_FILE.exists():
-        INPUT_FILE = "D:/Tutoring/UNCC UCAE Tutoring Hours.xlsx"
-        OUTPUT_FOLDER = "D:/PythonScripts/Cleaned_Data"
-
     cleaned_df = clean_tutoring_data(
         file_path = INPUT_FILE, output_dir = OUTPUT_FOLDER
     )

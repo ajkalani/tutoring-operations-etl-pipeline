@@ -30,5 +30,5 @@ Raw Multi-Sheet Workbook (.xlsx)
 2. Row Filtering ----------> Strip nulls & non-session entries ('Reading Day Review')
 3. Feature Extraction -----> Parse dates & derive temporal features (Year, Month, Day, Weekday)
 4. Identity Anonymization -> Factorize student PII -> Student_XXX (FERPA Compliance)
-5. Duration Auditing ------> Standardize Start/End times, handle 12-hr wraparound, flag ≥15 min diffs
+5. Duration Auditing ------> Standardize Start/End times, handle 12-hr wraparound, flag $\ge 15$ min diffs
 6. Target Export ----------> Output clean schema to CSV & print CLI Data Quality Audit Report

@@ -216,3 +216,20 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ==============================================================================
+# DATA PRIVACY & FERPA GOVERNANCE (Custom Rules)
+# ==============================================================================
+
+# Ignore all Excel workbooks and raw CSV files containing student PII
+*.xlsx
+*.csv
+D:/Tutoring/*
+data/raw/
+
+# Allow synthetic mock data explicitly for repository execution
+!data/raw/mock_tutoring_hours.xlsx
+
+# Ignore IDE configurations
+.vscode/
+.idea/
